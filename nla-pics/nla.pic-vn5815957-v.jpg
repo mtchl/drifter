@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>National Library of Australia - Pictures Delivery System</title>
+<base href="http://www.nla.gov.au/digicoll/pictures/error.html">
+<link href="/digicoll/pictures/stylesheets/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- links for screen readers and older browsers // -->
+<div class="hide">
+<a name="top">&nbsp;</a>
+	<h1>National Library of Australia - Digital Collections - Pictures</h1>
+	<ul>
+		<li><a href="#menu">Skip to main menu</a></li>
+		<li><a href="#menu">Skip to main function menu</a></li>
+		<li><a href="#contentsection">Skip to content</a></li>
+	</ul>
+</div>
+<!-- start header region // -->
+<div id="headerregion">
+<!-- start logo region // -->
+<div id="logoregion">
+	<div id="collectionlogo"><img src="/digicoll/pictures/images/logos/dc-pictures-logo.gif" alt="Pictures Delivery System" /></div>
+	<div id="nlalogo"><a href="http://www.nla.gov.au/"><img src="/digicoll/pictures/images/logos/nla-logo.gif" alt="National Library of Australia" /></a></div>
+</div>
+<!-- end logo region // -->
+<!-- start main menu region //-->
+  <div id="menu"> 
+    <ul>
+      <li class="menuitem"><a href="/digicoll/pictures/about.html">About</a></li>
+      <li class="menuitem"><a href="http://www.nla.gov.au/pict/pic_copyright.html">Copyright</a></li>
+      <li class="menuitem"><a href="/digicoll/pictures/contact.html">Contact us</a></li>
+      <li class="menuitem-last"><a href="/digicoll/pictures/help/">Help</a></li>
+    </ul>
+  </div>
+<!-- end main menu region //-->
+<!-- start header description region //-->
+<div id="header-descriptionregion">
+<!-- start search region //-->
+<!-- not required //-->
+<!-- end search region //-->
+<!-- start text description of item region // -->
+    <div id="singleheading"> 
+      	<h2>Item not found</h2>
+    </div>
+<!-- end text description of item region // -->
+</div>
+<!-- end header description region //-->
+</div>
+<!-- end header region // -->
+<!-- start navigation region // -->
+<div class="navigation">&nbsp;</div>
+<!-- end navigation region // -->
+<!-- start contents region // -->
+<div id="contentsection"> 
+<!-- start breadcrumbs region // -->
+<div class="breadcrumbs">
+	<a href="#">Back</a> > Message </div>
+<!-- end breadcrumbs region // -->
+ <div id="contents">
+<!-- start notice section //-->
+  <div id="notice">&nbsp;</div>
+<!-- end notice section //-->
+  <p>The item you have requested is not currently available online or does not exist.</p>
+    	<p>If you <strong>followed a link</strong> to get to this page, the 
+item you have requested has been selected for placement online but 
+              is not currently available. Please <a href="mailto:www@nla.gov.au">Contact 
+              Us</a> for further information.</p>
+    	<p>If you <strong>copied or typed</strong> the <a href="http://www.nla.gov.au/nlaredirect/pi.html">Identifier</a> from 
+              another source - for example a newspaper article - please check 
+              that it was correctly copied or typed and try again. You may also 
+              be able to verify the correct identifier by searching for the item 
+              in <a href="http://catalogue.nla.gov.au">our catalogue</a>.</p>
+	<div class="blankspace">&nbsp;</div>
+ </div>
+</div>
+<!-- end contents region // -->
+<!-- start navigation region // -->
+<div class="navigation">&nbsp;</div>
+<!-- end navigation region // -->
+</body>
+</html>
