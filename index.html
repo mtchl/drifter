@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drifter - Mitchell Whitelaw</title>
+
+	 <link rel="stylesheet" href="lib/leaflet.css" />
+	 <!-- <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'> -->
+	 <!-- <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+	 <script src="lib/jquery-1.12.1.min.js"></script>
+	 <link href='css/styles.css' rel='stylesheet' type='text/css'>
+
+
+	<div id="container">
+		<div id="introbg"></div>
+		<div id="nav">
+			
+			
+				<h2><a href='map.html'>Map</a> &middot; 
+				<a href='sifter.html'>Sifter</a> &middot; 
+				<a href='compositor.html'>Compositor</a></h2>
+		</div>
+		<div id="intro">
+
+		<div id="drift-header">
+		<span>Drifter</span>
+		</div>
+
+		<div class="primary">
+			<p>Drifter is a multilayered portrait of the Murrumbidgee river system, made out of data. Historic images, newspaper articles, scientific observations and digital maps; tens of thousands of data points come together in three ever-changing views.</p>
+
+			<p><a href="map.html">Map</a> uses digital newspaper articles to trace fragments of the river's (white) history, from everyday life to large-scale interventions. Alongside these human stories, thousands of scientific observations reveal some of the nonhuman life of the river.</p>
+
+			<p><a href="sifter.html">Sifter</a> transforms text into texture, drifting through text snippets from newspaper articles discussing the Murrumbidgee and its tributaries, piecing together the names of some of the living things that go unmentioned in these accounts.</p>
+
+			<p><a href="compositor.html">Compositor</a> combines historic images from library and archive collections with contemporary images from fieldwork monitoring the health of the river's wetland ecology.</p>
+
+		</div>
+
+		<h2>About</h2>
+		<p><em>Drifter</em> is a work by <a href="http://mtchl.net">Mitchell Whitelaw</a>, created for exhibition at the <a href="http://www.wagga.nsw.gov.au/art-gallery">Wagga Wagga Art Gallery</a> in conjunction with the <a href="http://landdialogues.com/">Land Dialogues</a> conference. A big-screen, non-interactive version is on show there until June 2016.</p>
+
+		<p>This web version works best with a modern browser and a big-ish screen.</p>
+		
+		<p><em>Drifter</em> is part of a research project on combining digital scientific and cultural heritage materials to create rich representations of landscape. It builds on the speculative, generative approaches to digital heritage developed in <a href="http://mtchl.net/succession">Succession</a>.</p>
+
+
+		<h2>Sources</h2>
+
+		<h4>Geospatial data sources</h4>
+		<ul>
+			<li>US Geological Service <a href="http://hydrosheds.cr.usgs.gov/">HydroSHEDS</a> River network</li>
+			<li><a href="http://data.geocomm.com/readme/dcw/dcw.html">Digital Chart of the World</a> water areas</li>
+			<li><a href="http://www.openstreetmap.org/">Open Street Map</a> towns and rivers</li>
+			<li>Australian Department of the Environment, Interim Classification of Aquatic Ecosystems in the Murray Darling Basin based on the Australian National Aquatic Ecosystems (ANAE) Classification Framework - <a href="http://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7B20B5D7C5-E3D1-47EB-888E-F23940374393%7D">Wetlands</a></li>
+		</ul>
+
+		<p>Newspaper articles: <a href="http://trove.nla.gov.au">Trove</a>, National Library of Australia</p>
+
+		<p>Frog observations: <a href="http://www.ala.org.au">Atlas of Living Australia</a></p>
+
+		<h4>Frog audio</h4>
+		<ul>
+			<li><a href="http://amphibiaweb.org/lists/sound.shtml">Amphibiaweb</a></li>
+			<li><a href="http://www.anbg.gov.au/sounds/">Australian National Botanic Gardens</a></li>
+			<li><a href="https://audioboom.com/FrogwatchACT">Frogwatch ACT</a> - recordings by Ederic Slater</li>
+			<li>Museum Victoria <a href="http://www.biodiversitysnapshots.net.au/">Biodiversity Snapshots</a></li>
+			<li>North Central Catchment Management Authority <a href="http://www.nccma.vic.gov.au/Water/Waterwatch/Frogs/index.aspx">Frogwatch resources</a> - recordings by Murray Littlejohn</li>
+		</ul>
+
+		<p>Images from the <a href="http://www.nla.gov.au">National Library of Australia</a> and <a href="https://www.flickr.com/commons">Flickr Commons</a> where credited.</p>
+
+		<p>Wetland fieldwork images courtesy of <a href="http://www.csu.edu.au/ses/staff/profiles/academic-staff/skye-wassens">Dr Skye Wassens</a> and her team, <a href="http://www.csu.edu.au/research/ilws">Institute for Land Water and Society</a>, Charles Sturt University.</p>
+
+		<h4>Built With</h4>
+		<ul>
+			<li>The <a href="http://help.nla.gov.au/trove/building-with-trove/api">Trove API</a></li>
+			<li>The <a href="http://api.ala.org.au/">Atlas of Living Australia API</a></li>
+			<li><a href="http://leafletjs.com">Leaflet.js</a></li>
+			<li><a href="http://jquery.com">jQuery</a></li>
+			<li><a href="http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library">howler.js</a></li>
+		</ul>
+		<p>&nbsp;</p>
+		<p><small>v 1.0 | 30 March 2016</small></p>
+
+</div> 
+
+
+	</div>
+
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		var letterdrift = function(){
+			var rand = Math.floor(Math.random()*7);
+			$letter = $("#drift-header span").eq(rand);
+			
+				 var xdrift = (Math.random()*6) - 3;
+				// $letter.css("transform","translate("+xdrift+"px,0)");
+				 $letter.css("left", xdrift+"px");
+
+			var op = Math.random()+0.5;
+			$letter.css("opacity",op);
+		}
+
+		//window.setInterval(letterdrift, 500);
+
+
+	});
+	
+
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10891242; 
+var sc_invisible=1; 
+var sc_security="1b5936e0"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify site
+analytics" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10891242/0/1b5936e0/1/"
+alt="shopify site analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
